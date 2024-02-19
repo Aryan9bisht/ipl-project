@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
+/*
 const bestEconomy = require('./src/server/best-economy');
 const economicalBowler = require('./src/server/economical-bowler');
 const extras = require('./src/server/extras');
@@ -10,6 +11,7 @@ const matchesPerYear = require('./src/server/matches-per-year');
 const matchWonPerYear = require('./src/server/matches-won-per-year');
 const strikeRate = require('./src/server/strike-rate');
 const tossResult = require('./src/server/won-toss-and-match');
+*/
 //app.use('.',require('./routes'));
 app.set('view engine', 'ejs');
 app.get('/home',async (req,res)=>{

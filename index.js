@@ -14,7 +14,7 @@ const tossResult = require('./src/server/won-toss-and-match');
 */
 //app.use('.',require('./routes'));
 app.set('view engine', 'ejs');
-app.get('/home',async (req,res)=>{
+app.get('/',async (req,res)=>{
     try {
       return  res.render('index.ejs',{portNumber : port});
     } catch (error) {

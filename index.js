@@ -136,7 +136,7 @@ app.get('/economicalBowler', (req, res) => {
 
 app.get('/extras', (req,res)=>{
     try {
-         extras;
+         
         const data = require('./src/public/output/extra-runs-concede-per-year.json');
         const categories = Object.keys(data);
 const scores = Object.values(data);
@@ -305,7 +305,7 @@ app.get('/mostNumberOfPOM', (req, res) => {
 
 app.get('/matchesPerYear', (req,res)=>{
     try {
-         matchesPerYear;
+         
          const result = require('./src/public/output/matches-per-year.json');
          let categories = Object.keys(result);
          let data = Object.values(result);
@@ -490,7 +490,7 @@ app.get('/strikerate', (req, res) => {
 
 app.get('/wonToss', (req,res)=>{
     try {
-         console.log(tossResult);
+         
         const result = require('./src/public/output/won-toss-and-match.json');
         const categories = Object.keys(result);
         const data = Object.values(result);

@@ -16,7 +16,7 @@ const tossResult = require('./src/server/won-toss-and-match');
 app.set('view engine', 'ejs');
 app.get('/home',async (req,res)=>{
     try {
-      return  res.render('index.ejs');
+      return  res.render('index.ejs',{portNumber : port});
     } catch (error) {
         console.log('error caught',error);
     }
@@ -187,7 +187,7 @@ const scores = Object.values(data);
         res.send(htmlContent);
 
     } catch (error) {
-        console.log('caught error ',err);
+        console.log('caught error ',error);
     }
    
 

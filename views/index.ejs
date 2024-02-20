@@ -1,30 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPL Data </title>
-    <h1 style="text-align: center; margin-top: 5%; color: black;">IPL DATA </h1>
-</head>
-<body style="background-color:  rgb(223, 171, 171);margin-top: 2%;">
-    <li style="text-align: center; background-color: rgb(223, 171, 171); font-style: normal;color: black;">
-        <ul>
-          <a href="http://localhost:8000/bestEconomy">Find player with best economy in super Over</a>
-        </ul>
-        <ul>
-          <a href="http://localhost:8000/economicalBowler">Data of economical Bowler</a>
-        </ul>
-        <ul>
-          <a href="http://localhost:8000/highestdismissal">Data of highest dismissal by a single bowler</a>
-        </ul>
-        <ul>  <a href="http://localhost:8000/extras">Extra runs conceeded </a></ul>
-        <ul> <a href="http://localhost:8000/mostNumberOfPOm">Most Player of the Match per season</a></ul>
-        <ul> <a href="http://localhost:8000/matchesPerYear">Matches per year</a></ul>
-        <ul><a href="http://localhost:8000/matchwonperyear">Matches won per year</a></ul>
-        <ul><a href="http://localhost:8000/strikerate">Strike rates of batsman</a></ul>
-        <ul>
-          <a href="http://localhost:8000/wonToss">List of teams that won toss and match</a></ul>
-      </li>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL Data</title>
+    <h1 style="text-align: center; margin-top: 5%; color: black">IPL DATA</h1>
+  </head>
+  <body style="background-color: rgb(223, 171, 171); margin-top: 2%">
+    <li
+      style="
+        text-align: center;
+        background-color: rgb(223, 171, 171);
+        font-style: normal;
+        color: black;
+      "
+    >
+      <ul>
+        <a href="http://localhost:<%= portNumber %>/bestEconomy"
+          >Find player with best economy in super Over</a
+        >
+      </ul>
+      <ul>
+        <a href="http://localhost:<%= portNumber %>/economicalBowler"
+          >Data of economical Bowler</a
+        >
+      </ul>
+      <ul>
+        <a href="http://localhost:<%= portNumber %>/highestdismissal"
+          >Data of highest dismissal by a single bowler</a
+        >
+      </ul>
+      <ul>
+        <a href="http://localhost:<%= portNumber %>/extras"
+          >Extra runs conceeded
+        </a>
+      </ul>
+      <ul>
+        <a href="http://localhost:<%= portNumber %>/mostNumberOfPOm"
+          >Most Player of the Match per season</a
+        >
+      </ul>
+      <ul>
+        <a href="http://localhost:<%= portNumber %>/matchesPerYear"
+          >Matches per year</a
+        >
+      </ul>
+      <ul>
+        <a href="http://localhost:<%= portNumber %>/matchwonperyear"
+          >Matches won per year</a
+        >
+      </ul>
+      <ul>
+        <a href="http://localhost:<%= portNumber %>/strikerate"
+          >Strike rates of batsman</a
+        >
+      </ul>
+      <ul>
+        <a href="http://localhost:<%= portNumber %>/wonToss"
+          >List of teams that won toss and match</a
+        >
+      </ul>
+    </li>
+  </body>
 </html>
-
